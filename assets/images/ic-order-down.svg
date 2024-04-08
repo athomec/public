@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic-order-down" transform="translate(-19 -57)">
+    <rect id="Rectangle_836" data-name="Rectangle 836" width="24" height="24" rx="5" transform="translate(19 57)" fill="#2fbe8d"/>
+    <g id="keyboard_arrow_down_black_24dp" transform="translate(19 57)">
+      <path id="Path_2597" data-name="Path 2597" d="M0,0H24V24H0Z" fill="none"/>
+      <path id="Path_2598" data-name="Path 2598" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>
