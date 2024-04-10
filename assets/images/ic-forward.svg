@@ -1,0 +1,10 @@
+<svg id="ic-forward" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_855" data-name="Group 855">
+    <path id="Path_2588" data-name="Path 2588" d="M0,0H30V30H0Z" fill="none"/>
+  </g>
+  <g id="Group_857" data-name="Group 857" transform="translate(2.5 3.75)">
+    <g id="Group_856" data-name="Group 856">
+      <path id="Path_2589" data-name="Path 2589" d="M27,9.25V5.5A2.507,2.507,0,0,0,24.5,3H4.5A2.507,2.507,0,0,0,2,5.5v15A2.507,2.507,0,0,0,4.5,23h5v2.5h10V23h5a2.5,2.5,0,0,0,2.488-2.5V14.25H27a2.507,2.507,0,0,0-2.5-2.5H15.537l2.287-2.287L16.062,7.7c-4.45,4.438-2.962,2.95-5.312,5.3l5.3,5.3,1.763-1.763L15.537,14.25H24.5V20.5H4.5V5.5h20V9.25Z" transform="translate(-2 -3)" fill="#707070"/>
+    </g>
+  </g>
+</svg>
