@@ -59,7 +59,6 @@ $(function () {//JS開頭
 	})
 	//table編輯
 	$(".js-table-edit-ok").hide();
-
 	$(".js-table-edit").click(function () {
 		var $tr = $(this).parent(".js-table-function").parent("td").parent("tr");
 		var $readonlyElements = $tr.find("[readonly]");
