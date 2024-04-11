@@ -20826,6 +20826,8 @@ input[type="file"] {
     font-weight: 500; }
     .footer-gotop img {
       width: 16px; }
+  .footer a {
+    color: #FFFFC9; }
 
 /* ---------------------登入頁開始------------------------*/
 .login {
