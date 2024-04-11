@@ -170,7 +170,7 @@
         <div class="main-container">
             <h3 class="main-container-title mb-3">新聞稿管理</h3>
             <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <div class="nav nav-tabs border-0 scrollbar flex-nowrap overflow-y-hidden" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
                         role="tab"><img src="./assets/images/ic-confirm.svg">已簽核新聞稿</button>
                     <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
@@ -179,895 +179,385 @@
                         role="tab"><img src="./assets/images/ic-forward.svg">代轉新聞稿</button>
                 </div>
             </nav>
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...
+            <div class="tab-content bg-quaternary-light p-3 mb-5" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <table class="table table-rwd mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" width="150">撰稿單位</th>
+                                <th scope="col" width="90">撰稿人</th>
+                                <th scope="col">標題</th>
+                                <th scope="col" width="150">類型</th>
+                                <th scope="col" width="90">編輯人員</th>
+                                <th scope="col">最後編輯時間</th>
+                                <th scope="col" width="110"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" data-th="撰稿單位">
+                                    果樹及預訂產業組
+                                </th>
+                                <td data-th="撰稿人">
+                                    沈葆雄
+                                </td>
+                                <td data-th="標題">
+                                    <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                </td>
+                                <td data-th="類型">
+                                    農糧署分署範本
+                                </td>
+                                <td data-th="編輯人員">
+                                    沈葆雄
+                                </td>
+                                <td data-th="編輯時間">
+                                    2024/2/23 06:33:00
+                                </td>
+                                <td data-th="none">
+                                    <button class="btn btn-sm btn-quaternary-dark text-white rounded-pill px-3">發布管理</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" data-th="撰稿單位">
+                                    果樹及預訂產業組
+                                </th>
+                                <td data-th="撰稿人">
+                                    沈葆雄
+                                </td>
+                                <td data-th="標題">
+                                    <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                </td>
+                                <td data-th="類型">
+                                    農糧署分署範本
+                                </td>
+                                <td data-th="編輯人員">
+                                    沈葆雄
+                                </td>
+                                <td data-th="編輯時間">
+                                    2024/2/23 06:33:00
+                                </td>
+                                <td data-th="none">
+                                    <button class="btn btn-sm btn-special text-white rounded-pill px-3">取消發布</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
-                <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="nav-disabled" role="tabpanel">...
                 </div>
             </div>
-        </div>
-        <div class="table-container-connect"></div>
-        <h3 class="table-container-header">
-            <div class="table-badge table-badge-danger-light">3</div>
-            <p class="text-primary-xdark">上傳發布照片(非必要)</p>
-            <ul class="notice-list ms-auto">
-                <li class="notice-list-item">上傳說明:『總計』上傳限制不得超過7MB，附件數量不得超過6件</li>
-            </ul>
-        </h3>
-        <table class="table table-container shadow-sm">
-            <tbody>
-                <tr>
-                    <th scope="row" width="15%">附件檔案</th>
-                    <td>
-                        <div class="bg-quaternary-light d-flex align-items-start p-3 mb-3 flex-wrap flex-md-nowrap">
+            <h3 class="main-container-title mb-3">已發布／未發布之新聞稿</h3>
+            <div class="bg-gray-100 d-flex align-items-end p-3 mb-3 flex-wrap flex-xxl-nowrap mb-3">
+                <div class="container px-0">
+                    <div class="row gy-3">
+                        <div class="col-xl-6 col-xxl-4">
                             <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="accessory" class="form-label">附件名稱</label>
-                                <input type="text" class="form-control" id="accessory" placeholder="若無輸入則自動帶入檔案名稱">
-                            </div>
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100 Pad-100" style="width: 300px;">
-                                <label for="upload" class="form-label">上傳檔案</label>
-                                <input type="file" class="form-control" id="upload" style="display: block;"
-                                    onchange="displayFileName()">
-                            </div>
-                            <div class="flex-shrink-0 mb-lg-0 Pad-100">
-                                <div class="form-label text-quaternary-light d-none d-md-block">新增</div>
-                                <button class="btn btn-quaternary-dark text-white rounded-pill ms-auto px-4 px-lg-3">
-                                    新增
-                                </button>
+                                <label for="bureau" class="form-label">署別</label>
+                                <select class="form-select" id="bureau">
+                                    <option selected="">請選擇</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
                         </div>
-                        <table class="table table-rwd">
-                            <thead>
-                                <tr>
-                                    <th scope="col" width="90">
-                                        <button class="btn btn-sm table-order shadow-sm js-table-order">排序<img
-                                                src="./assets/images/ic-order.svg"></button>
-                                    </th>
-                                    <th scope="col">附件名稱</th>
-                                    <th scope="col" width="110">文件大小</th>
-                                    <th scope="col" width="110">上傳人員</th>
-                                    <th scope="col" width="110">上傳日期</th>
-                                    <th scope="col" width="130"></th>
-                                    <th scope="col" width="40"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row" data-th="排序">
-                                        <p class="js-table-order-num">1</p>
-                                        <div class="table-order-btn js-table-order-btn">
-                                            <button class="btn p-0 me-2"><img
-                                                    src="./assets/images/ic-order-down.svg"></button>
-                                            <button class="btn p-0"><img src="./assets/images/ic-order-up.svg"></button>
-                                        </div>
-                                    </th>
-                                    <td class="text-start" data-th="附件名稱">
-                                        AAAAA十個字我要湊滿五十個字我要湊滿五十個字我要湊滿五十個字我要湊滿五十個字我要湊滿五十個字五十
-                                    </td>
-                                    <td data-th="文件大小">
-                                        3KB
-                                    </td>
-                                    <td data-th="上傳人員">
-                                        人員人員人員
-                                    </td>
-                                    <td data-th="上傳日期">
-                                        2024/1/30 09:54:00
-                                    </td>
-                                    <td data-th="none"><a href="#"
-                                            class="btn btn-sm btn-auxiliary text-white rounded-pill px-3 px-xl-1">下載(ODF檔)</a>
-                                    </td>
-                                    <td data-th="none">
-                                        <button class="btn p-0 mx-auto mx-xl-0"><img src="./assets/images/ic-trash.svg"></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" data-th="排序">
-                                        <p class="js-table-order-num">2</p>
-                                        <div class="table-order-btn js-table-order-btn">
-                                            <button class="btn p-0 me-2"><img
-                                                    src="./assets/images/ic-order-down.svg"></button>
-                                            <button class="btn p-0"><img src="./assets/images/ic-order-up.svg"></button>
-                                        </div>
-                                    </th>
-                                    <td class="text-start" data-th="附件名稱">
-                                        AAAAA十個字我要湊滿五十個字我要湊滿五十個字我要湊滿五十個字我要湊滿五十個字我要湊滿五十個字五十
-                                    </td>
-                                    <td data-th="文件大小">
-                                        3KB
-                                    </td>
-                                    <td data-th="上傳人員">
-                                        人員人員人員
-                                    </td>
-                                    <td data-th="上傳日期">
-                                        2024/1/30 09:54:00
-                                    </td>
-                                    <td data-th="none"><a href="#"
-                                            class="btn btn-sm btn-auxiliary text-white rounded-pill px-3 px-xl-1">下載(ODF檔)</a>
-                                    </td>
-                                    <td data-th="none">
-                                        <button class="btn p-0"><img src="./assets/images/ic-trash.svg"></button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">QRcode</th>
-                    <td>
-                        <div class="bg-quaternary-light d-flex align-items-start p-3 mb-3 flex-wrap flex-md-nowrap">
+                        <div class="col-xl-6 col-xxl-4">
                             <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="accessory" class="form-label">QRcode名稱</label>
-                                <input type="text" class="form-control" id="accessory" placeholder="請勿超過50個中文字">
-                            </div>
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100 Pad-100" style="width: 300px;">
-                                <label for="upload" class="form-label">上傳檔案</label>
-                                <input type="file" class="form-control" id="upload" style="display: block;"
-                                    onchange="displayFileName()" placeholder="點擊選擇檔案">
-                            </div>
-                            <div class="flex-shrink-0 mb-lg-0 Pad-100">
-                                <div class="form-label text-quaternary-light d-none d-md-block">新增</div>
-                                <button class="btn btn-quaternary-dark text-white rounded-pill ms-auto px-4 px-lg-3">
-                                    新增
-                                </button>
+                                <label for="room" class="form-label">科室</label>
+                                <select class="form-select" id="room">
+                                    <option selected="">請選擇</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
                         </div>
-                        <table class="table table-rwd">
-                            <thead>
-                                <tr>
-                                    <th scope="col" width="90">
-                                        <button class="btn btn-sm table-order shadow-sm js-table-order">排序<img
-                                                src="./assets/images/ic-order.svg"></button>
-                                    </th>
-                                    <th scope="col">附件名稱</th>
-                                    <th scope="col" width="110">文件大小</th>
-                                    <th scope="col" width="110">上傳人員</th>
-                                    <th scope="col" width="110">上傳日期</th>
-                                    <th scope="col" width="130"></th>
-                                    <th scope="col" width="40"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row" data-th="排序">
-                                        <p class="js-table-order-num">1</p>
-                                        <div class="table-order-btn js-table-order-btn">
-                                            <button class="btn p-0 me-2"><img src="./assets/images/ic-order-down.svg"></button>
-                                            <button class="btn p-0"><img src="./assets/images/ic-order-up.svg"></button>
-                                        </div>
-                                    </th>
-                                    <td class="text-start" data-th="附件名稱">
-                                        AAAAA十個字我要湊滿五十個字我要湊滿五十個字我要湊滿五十個字我要湊滿五十個字我要湊滿五十個字五十
-                                    </td>
-                                    <td data-th="文件大小">
-                                        3KB
-                                    </td>
-                                    <td data-th="上傳人員">
-                                        人員人員人員
-                                    </td>
-                                    <td data-th="上傳日期">
-                                        2024/1/30 09:54:00
-                                    </td>
-                                    <td data-th="none"><a href="#"
-                                            class="btn btn-sm btn-auxiliary text-white rounded-pill px-3 px-xl-1">下載(ODF檔)</a>
-                                    </td>
-                                    <td data-th="none">
-                                        <button class="btn p-0 mx-auto mx-xl-0"><img src="./assets/images/ic-trash.svg"></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" data-th="排序">
-                                        <p class="js-table-order-num">2</p>
-                                        <div class="table-order-btn js-table-order-btn">
-                                            <button class="btn p-0 me-2"><img src="./assets/images/ic-order-down.svg"></button>
-                                            <button class="btn p-0"><img src="./assets/images/ic-order-up.svg"></button>
-                                        </div>
-                                    </th>
-                                    <td class="text-start" data-th="附件名稱">
-                                        AAAAA十個字我要湊滿五十個字我要湊滿五十個字我要湊滿五十個字我要湊滿五十個字我要湊滿五十個字五十
-                                    </td>
-                                    <td data-th="文件大小">
-                                        3KB
-                                    </td>
-                                    <td data-th="上傳人員">
-                                        人員人員人員
-                                    </td>
-                                    <td data-th="上傳日期">
-                                        2024/1/30 09:54:00
-                                    </td>
-                                    <td data-th="none"><a href="#"
-                                            class="btn btn-sm btn-auxiliary text-white rounded-pill px-3 px-xl-1">下載(ODF檔)</a>
-                                    </td>
-                                    <td data-th="none">
-                                        <button class="btn p-0"><img src="./assets/images/ic-trash.svg"></button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="table-container-connect"></div>
-        <h3 class="table-container-header">
-            <div class="table-badge table-badge-secondary-dark">4</div>
-            <p class="text-primary-xdark">選擇其他發布統計(發布作業區)</p>
-        </h3>
-        <table class="table table-container shadow-sm">
-            <tbody>
-                <tr>
-                    <th scope="row" width="15%">其他發布管道</th>
-                    <td>
-                        <div class="d-flex flex-wrap mb-2">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="system" checked>
-                                <label class="form-check-label" for="system">
-                                    農業電子看板跑馬資訊張貼於農業部新聞登入系統
-                                </label>
-                            </div>
-                            <ul class="notice-list ms-auto">
-                                <li class="notice-list-item">此資訊將附件給：OOO技正等1人</li>
-                            </ul>
-                        </div>
-                        <h4 class="text-center text-white bg-primary-dark py-2 fs-6 mb-0">農業電子看板跑馬訊息</h4>
-                        <div class="border border-primary-dark p-3 mb-4">
-                            <div class="container-fluid px-0">
-                                <div class="row gy-3">
-                                    <div class="col-md-4">
-                                        <label for="agencies" class="form-label">機關單位</label>
-                                        <input type="text" class="form-control" id="agencies">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <label for="message" class="form-label">跑馬訊息內容</label>
-                                        <div class="d-flex">
-                                            <input type="text" class="form-control" id="message"
-                                                placeholder="跑馬訊息內容請於25字內敘明，若字數超過請分數則敘之">
-                                            <span class="text-gray-600 ms-2 ms-md-3">0 /
-                                                200</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label for="release_date" class="form-label">日期</label>
-                                        <div class="input-group date" id="release_date" data-target-input="nearest">
-                                            <input type="text"
-                                                class="form-control datetimepicker-input border-end-0 pe-0"
-                                                data-target="#release_date">
-                                            <div class="input-group-append" data-target="#release_date"
-                                                data-toggle="datetimepicker">
-                                                <button class="btn input-group-text" title="新聞稿資訊日期" value="新聞稿資訊日期">
-                                                    <img src="./assets/images/ic-clock.svg" alt="icon">
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label for="release_on" class="form-label">上檔日期</label>
-                                        <div class="input-group date" id="release_on" data-target-input="nearest">
-                                            <input type="text"
-                                                class="form-control datetimepicker-input border-end-0 pe-0"
-                                                data-target="#release_on">
-                                            <div class="input-group-append" data-target="#release_on"
-                                                data-toggle="datetimepicker">
-                                                <button class="btn input-group-text" title="新聞稿資訊日期" value="新聞稿資訊日期">
-                                                    <img src="./assets/images/ic-clock.svg" alt="icon">
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label for="release_out" class="form-label">下檔日期</label>
-                                        <div class="input-group date" id="release_out" data-target-input="nearest">
-                                            <input type="text"
-                                                class="form-control datetimepicker-input border-end-0 pe-0"
-                                                data-target="#release_out">
-                                            <div class="input-group-append" data-target="#release_out"
-                                                data-toggle="datetimepicker">
-                                                <button class="btn input-group-text" title="新聞稿資訊日期" value="新聞稿資訊日期">
-                                                    <img src="./assets/images/ic-clock.svg" alt="icon">
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-xl-6 col-xxl-4">
+                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
+                                <label for="year" class="form-label">年度</label>
+                                <select class="form-select" id="year">
+                                    <option selected="">請選擇</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="d-flex flex-wrap mb-2">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="platform" checked>
-                                <label class="form-check-label" for="platform">
-                                    電子郵件農業部M化平台
-                                </label>
+                        <div class="col-xl-6 col-xxl-4">
+                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
+                                <label for="media_number" class="form-label">新聞稿編號</label>
+                                <input type="text" class="form-control" id="media_number" placeholder="請輸入新聞稿編號">
                             </div>
-                            <ul class="notice-list ms-auto">
-                                <li class="notice-list-item">此訊息將附件給：OOO科長、OOO技正、OOO科長等3人</li>
-                            </ul>
                         </div>
-                        <h4 class="text-center text-white bg-primary-dark py-2 fs-6 mb-0">農業部M化平台訊息</h4>
-                        <div class="border border-primary-dark p-3 mb-4">
-                            <div class="d-flex mb-2">
-                                <span class="form-label">地區</span>
-                                <a href="#"
-                                    class="btn btn-sm btn-auxiliary text-white rounded-pill px-2 ms-auto me-2">清除</a>
-                                <a href="#" class="btn btn-sm btn-quaternary-dark text-white rounded-pill px-2">全選</a>
+                        <div class="col-xl-6 col-xxl-4">
+                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
+                                <label for="media_title" class="form-label">標題</label>
+                                <input type="text" class="form-control" id="media_title" placeholder="請輸入標題">
                             </div>
-                            <div class="mb-4">
+                        </div>
+                        <div class="col-xl-6 col-xxl-4">
+                            <div class="form-label">新聞稿狀態</div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate1" value="option1">
-                                    <label class="form-check-label" for="locate1">宜蘭縣</label>
+                                    <input class="form-check-input" type="radio" name="status" id="status_all" value="option1" checked="">
+                                    <label class="form-check-label" for="status_all">全部</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate2" value="option1">
-                                    <label class="form-check-label" for="locate2">基隆市</label>
+                                    <input class="form-check-input" type="radio" name="status" id="status_done" value="option2">
+                                    <label class="form-check-label" for="status_done">已發布</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate3" value="option1">
-                                    <label class="form-check-label" for="locate3">臺北市</label>
+                                    <input class="form-check-input" type="radio" name="status" id="status_yet" value="option2">
+                                    <label class="form-check-label" for="status_yet">未發布</label>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate4" value="option1">
-                                    <label class="form-check-label" for="locate4">新北市</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate5" value="option1">
-                                    <label class="form-check-label" for="locate5">桃園市</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate6" value="option1">
-                                    <label class="form-check-label" for="locate6">新竹市</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate7" value="option1">
-                                    <label class="form-check-label" for="locate7">新竹縣</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate8" value="option1">
-                                    <label class="form-check-label" for="locate8">苗栗縣</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate9" value="option1">
-                                    <label class="form-check-label" for="locate9">臺中市</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate10" value="option1">
-                                    <label class="form-check-label" for="locate10">彰化縣</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate11" value="option1">
-                                    <label class="form-check-label" for="locate11">南投縣</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate12" value="option1">
-                                    <label class="form-check-label" for="locate12">臺南市</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate13" value="option1">
-                                    <label class="form-check-label" for="locate13">雲林縣</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate14" value="option1">
-                                    <label class="form-check-label" for="locate14">嘉義市</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate15" value="option1">
-                                    <label class="form-check-label" for="locate15">嘉義縣</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate16" value="option1">
-                                    <label class="form-check-label" for="locate16">高雄市</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate15" value="option1">
-                                    <label class="form-check-label" for="locate15">屏東縣</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate16" value="option1">
-                                    <label class="form-check-label" for="locate16">花蓮縣</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate17" value="option1">
-                                    <label class="form-check-label" for="locate17">臺東縣</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate18" value="option1">
-                                    <label class="form-check-label" for="locate18">澎湖縣</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate19" value="option1">
-                                    <label class="form-check-label" for="locate19">金門縣</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="locate20" value="option1">
-                                    <label class="form-check-label" for="locate20">連江縣</label>
-                                </div>
-                            </div>
-                            <div class="mb-3 mb-lg-0 me-lg-3 w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 mb-lg-0 PC-md-100">
+                    <button class="btn btn-primary text-white rounded-pill ms-auto px-4 px-lg-3 mt-2">
+                        查詢
+                    </button>
+                </div>
+            </div>
+            <div class="position-relative">
+                <table class="table table-footable" data-paging="true" data-sorting="true" data-toggle-column="last">
+                    <thead>
+                        <tr>
+                            <th scope="col" width="70" data-breakpoints="xs sm md">項次</th>
+                            <th scope="col" width="110" data-breakpoints="xs sm md lg">撰稿單位</th>
+                            <th scope="col" width="100" data-breakpoints="xs sm md lg xl">撰稿人</th>
+                            <th scope="col">標題</th>
+                            <th scope="col" width="145" data-breakpoints="xs sm md lg xl">類型</th>
+                            <th scope="col" width="220" data-breakpoints="xs sm md">發佈時間</th>
+                            <th scope="col" width="100" data-breakpoints="xs sm md">狀態</th>
+                            <th scope="col" width="250" data-breakpoints="xs" data-sorting="none"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                農業資材科
+                            </td>
+                            <td>
+                                沈葆雄
+                            </td>
+                            <td>
+                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                            </td>
+                            <td>
+                                農糧署分署範本
+                            </td>
+                            <td>
+                                2024/2/23 06:33:00
+                            </td>
+                            <td>
+                                <p class="text-primary">已發布</p>
+                            </td>
+                            <td>
                                 <div class="d-flex">
-                                    <label for="locate_info" class="form-label">說明</label>
-                                    <span class="flex-shrink-0 text-gray-600 ms-auto" style="width: 70px;">0 /
-                                        1000</span>
+                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-3 mx-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-3 mx-1">重新發送</a>
                                 </div>
-                                <textarea class="form-control" id="locate_info" rows="4"></textarea>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-wrap mb-2">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="traffic" checked>
-                                <label class="form-check-label" for="traffic">
-                                    廣告於交通部觀光局網站活動訊息
-                                </label>
-                            </div>
-                            <ul class="notice-list ms-auto">
-                                <li class="notice-list-item">此資訊將附件給：OOO技正等1人</li>
-                            </ul>
-                        </div>
-                        <h4 class="text-center text-white bg-primary-dark py-2 fs-6 mb-0">交通部旅遊局網站活動資訊</h4>
-                        <div class="border border-primary-dark p-3 mb-4">
-                            <div class="container-fluid px-0">
-                                <div class="row gy-3">
-                                    <div class="col-sm-4">
-                                        <label for="traffic_agencies" class="form-label">機關單位</label>
-                                        <input type="text" class="form-control" id="traffic_agencies">
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label for="traffic_date" class="form-label">日期</label>
-                                        <div class="input-group date" id="traffic_date" data-target-input="nearest">
-                                            <input type="text"
-                                                class="form-control datetimepicker-input border-end-0 pe-0"
-                                                data-target="#traffic_date">
-                                            <div class="input-group-append" data-target="#traffic_date"
-                                                data-toggle="datetimepicker">
-                                                <button class="btn input-group-text" title="交通部旅遊局網站活動日期"
-                                                    value="交通部旅遊局網站活動日期">
-                                                    <img src="./assets/images/ic-clock.svg" alt="icon">
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="d-flex flex-wrap">
-                                            <label for="message" class="form-label">跑馬訊息內容</label>
-                                            <p class="ms-auto text-primary-dark fs-7 mb-2">內容重點簡單說明活動訊息(含人、事、時、地、物)，俾利活動訊息傳遞</p>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <input type="text" class="form-control" id="message"
-                                                placeholder="跑馬訊息內容請於25字內敘明，若字數超過請分數則敘之">
-                                            <span class="text-gray-600 ms-2 ms-md-3">0 /
-                                                25</span>
-                                        </div>
-                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                農業資材科
+                            </td>
+                            <td>
+                                沈葆雄
+                            </td>
+                            <td>
+                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                            </td>
+                            <td>
+                                農糧署分署範本
+                            </td>
+                            <td>
+                                2024/2/23 06:33:00
+                            </td>
+                            <td>
+                                <p class="text-primary">已發布</p>
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-3 mx-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-3 mx-1">重新發送</a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" value="" id="conference">
-                            <label class="form-check-label" for="conference">
-                                召開記者會
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="e_government">
-                            <label class="form-check-label" for="e_government">
-                                刊登在我的 E 政府爭議消息焦點區域
-                            </label>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">作業選項</th>
-                    <td>
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" value="" id="sign_done" checked>
-                            <label class="form-check-label" for="sign_done">
-                                簽呈完成擬發布
-                            </label>
-                        </div>
-                        <div class="me-lg-3 mb-3 w-100" style="max-width: 300px;">
-                            <input type="file" class="form-control" style="display: block;" onchange="displayFileName()"
-                                placeholder="點擊選擇檔案">
-                        </div>
-                        <ul class="notice-list ms-auto">
-                            <li class="notice-list-item">選擇呈核完成，擬發布此新聞稿，務必於判準後再進行發布，若判核文件也可上傳</li>
-                            <li class="notice-list-item">檔名長度不得超過30個字</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="table-container-connect"></div>
-        <h3 class="table-container-header">
-            <div class="table-badge table-badge-quaternary-xdark">5</div>
-            <p class="text-primary-xdark">加入發布媒體</p>
-        </h3>
-        <table class="table table-container shadow-sm">
-            <tbody>
-                <tr>
-                    <th scope="row" width="15%">公眾群組</th>
-                    <td>
-                        <h4 class="text-center text-white bg-special-light py-2 fs-6 mb-0">本署</h4>
-                        <div class="border border-special-light p-3">
-                            <div class="container-fluid">
-                                <div class="form-check-special-light form-check-arrange">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media1" value="option1">
-                                            <label class="form-check-label" for="media1">三長官</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media2" value="option1">
-                                            <label class="form-check-label" for="media2">簡任級主管以上</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media3" value="option1">
-                                            <label class="form-check-label" for="media3">科長以上長官(辦事處)</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media4" value="option1">
-                                            <label class="form-check-label" for="media4">中部記者群</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media5" value="option1">
-                                            <label class="form-check-label" for="media5">北部記者群</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media6" value="option1">
-                                            <label class="form-check-label" for="media6">農業部-新聞</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media7" value="option1">
-                                            <label class="form-check-label" for="media7">農糧署-新聞稿</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media8" value="option1">
-                                            <label class="form-check-label" for="media8">農業部農業線記者</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media9" value="option1">
-                                            <label class="form-check-label" for="media9">北部記者群(專業版)</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media10"
-                                                value="option1">
-                                            <label class="form-check-label" for="media10">早報通發版</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media11"
-                                                value="option1">
-                                            <label class="form-check-label" for="media11">分署研究員及窗口</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media12"
-                                                value="option1">
-                                            <label class="form-check-label" for="media12">各分署-同仁</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media13"
-                                                value="option1">
-                                            <label class="form-check-label" for="media13">水果月曆名單</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="media14"
-                                                value="option1">
-                                            <label class="form-check-label" for="media14">公關科</label>
-                                        </div>
-                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                農業資材科
+                            </td>
+                            <td>
+                                沈葆雄
+                            </td>
+                            <td>
+                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                            </td>
+                            <td>
+                                農糧署分署範本
+                            </td>
+                            <td>
+                                2024/2/23 06:33:00
+                            </td>
+                            <td>
+                                <p class="text-primary">已發布</p>
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-3 mx-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-3 mx-1">重新發送</a>
                                 </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">媒體人員</th>
-                    <td>
-                        <div class="bg-gray-100 d-flex align-items-start p-3 mb-3 flex-wrap flex-md-nowrap">
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="media_name" class="form-label">媒體名稱</label>
-                                <input type="text" class="form-control" id="media_name" value="臺灣電視事業股份有限公司">
-                            </div>
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="media_member_name" class="form-label">姓名</label>
-                                <input type="text" class="form-control" id="media_member_name" value="王O明">
-                            </div>
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="media_email" class="form-label">電子郵件</label>
-                                <input type="text" class="form-control" id="media_email" value="demo@gmail.com">
-                            </div>
-                            <div class="flex-shrink-0 mb-lg-0 Pad-100">
-                                <div class="form-label text-gray-100 d-none d-md-block">搜尋</div>
-                                <button class="btn btn-primary text-white rounded-pill ms-auto px-4 px-lg-3">
-                                    搜尋
-                                </button>
-                            </div>
-                        </div>
-                        <div class="position-relative">
-                            <table class="table table-footable" data-paging="true" data-sorting="true" data-toggle-column="last">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" data-sorting="none"></th>
-                                        <th scope="col">媒體名稱</th>
-                                        <th scope="col" data-breakpoints="xs sm md">姓名</th>
-                                        <th scope="col" data-breakpoints="xs sm">電子郵件</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr data-breakpoints="xs">
-                                        <td scope="row">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" value="option1" checked>
-                                            </div>
-                                        </td>
-                                        <td data-th="媒體名稱">
-                                            台灣電視事業股份有限公司
-                                        </td>
-                                        <td data-th="姓名">
-                                            沈葆雄
-                                        </td>
-                                        <td data-th="電子郵件">
-                                            demo@gmail.com
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" value="option1" checked>
-                                            </div>
-                                        </td>
-                                        <td data-th="媒體名稱">
-                                            台灣電視事業股份有限公司
-                                        </td>
-                                        <td data-th="姓名">
-                                            沈葆雄
-                                        </td>
-                                        <td data-th="電子郵件">
-                                            demo@gmail.com
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" value="option1" checked>
-                                            </div>
-                                        </td>
-                                        <td data-th="媒體名稱">
-                                            台灣電視事業股份有限公司
-                                        </td>
-                                        <td data-th="姓名">
-                                            沈葆雄
-                                        </td>
-                                        <td data-th="電子郵件">
-                                            demo@gmail.com
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" value="option1" checked>
-                                            </div>
-                                        </td>
-                                        <td data-th="媒體名稱">
-                                            台灣電視事業股份有限公司
-                                        </td>
-                                        <td data-th="姓名">
-                                            沈葆雄
-                                        </td>
-                                        <td data-th="電子郵件">
-                                            demo@gmail.com
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" value="option1" checked>
-                                            </div>
-                                        </td>
-                                        <td data-th="媒體名稱">
-                                            台灣電視事業股份有限公司
-                                        </td>
-                                        <td data-th="姓名">
-                                            沈葆雄
-                                        </td>
-                                        <td data-th="電子郵件">
-                                            demo@gmail.com
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="table-page-info fs-7">
-                                共 120筆，每頁顯示<input type="text" class="form-control form-control-sm mx-2 py-0 text-center"
-                                    value="10" style="width:58px;min-height: 20px;">筆
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="table-container-connect"></div>
-        <h3 class="table-container-header">
-            <div class="table-badge table-badge-primary-xdark">6</div>
-            <p class="text-primary-xdark">接收名單確認</p>
-        </h3>
-        <table class="table table-container shadow-sm">
-            <tbody>
-                <tr>
-                    <th scope="row" width="15%">接收名單</th>
-                    <td>
-                        <div class="bg-gray-100 d-flex align-items-start p-3 mb-3 flex-wrap flex-md-nowrap">
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="media_name" class="form-label">媒體名稱</label>
-                                <input type="text" class="form-control" id="media_name" value="臺灣電視事業股份有限公司">
-                            </div>
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="media_member_name" class="form-label">姓名</label>
-                                <input type="text" class="form-control" id="media_member_name" value="王O明">
-                            </div>
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="media_email" class="form-label">電子郵件</label>
-                                <input type="email" class="form-control" id="media_email" value="demo@gmail.com">
-                            </div>
-                            <div class="flex-shrink-0 mb-lg-0 Pad-100">
-                                <div class="form-label text-gray-100 d-none d-md-block">搜尋</div>
-                                <button class="btn btn-primary text-white rounded-pill ms-auto px-4 px-lg-3">
-                                    搜尋
-                                </button>
-                            </div>
-                        </div>
-                        <div class="position-relative">
-                            <table class="table table-footable" data-paging="true" data-sorting="true" data-toggle-column="last">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" data-sorting="none"></th>
-                                        <th scope="col">媒體名稱</th>
-                                        <th scope="col" data-breakpoints="xs sm md">姓名</th>
-                                        <th scope="col" data-breakpoints="xs sm">電子郵件</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr data-breakpoints="xs">
-                                        <td scope="row">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" value="option1" checked>
-                                            </div>
-                                        </td>
-                                        <td data-th="媒體名稱">
-                                            台灣電視事業股份有限公司
-                                        </td>
-                                        <td data-th="姓名">
-                                            沈葆雄
-                                        </td>
-                                        <td data-th="電子郵件">
-                                            demo@gmail.com
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" value="option1" checked>
-                                            </div>
-                                        </td>
-                                        <td data-th="媒體名稱">
-                                            台灣電視事業股份有限公司
-                                        </td>
-                                        <td data-th="姓名">
-                                            沈葆雄
-                                        </td>
-                                        <td data-th="電子郵件">
-                                            demo@gmail.com
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" value="option1" checked>
-                                            </div>
-                                        </td>
-                                        <td data-th="媒體名稱">
-                                            台灣電視事業股份有限公司
-                                        </td>
-                                        <td data-th="姓名">
-                                            沈葆雄
-                                        </td>
-                                        <td data-th="電子郵件">
-                                            demo@gmail.com
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" value="option1" checked>
-                                            </div>
-                                        </td>
-                                        <td data-th="媒體名稱">
-                                            台灣電視事業股份有限公司
-                                        </td>
-                                        <td data-th="姓名">
-                                            沈葆雄
-                                        </td>
-                                        <td data-th="電子郵件">
-                                            demo@gmail.com
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" value="option1" checked>
-                                            </div>
-                                        </td>
-                                        <td data-th="媒體名稱">
-                                            台灣電視事業股份有限公司
-                                        </td>
-                                        <td data-th="姓名">
-                                            沈葆雄
-                                        </td>
-                                        <td data-th="電子郵件">
-                                            demo@gmail.com
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="table-page-info fs-7">
-                                共 120筆，每頁顯示<input type="text" class="form-control form-control-sm mx-2 py-0 text-center"
-                                    value="10" style="width:58px;min-height: 20px;">筆
-                            </div>
-                        </div>
-                        <label for="other_email" class="form-label">其他設定的Email</label>
-                        <input type="email" class="form-control mb-2" id="other_email" placeholder="請輸入Email">
-                        <ul class="notice-list ms-auto">
-                            <li class="notice-list-item">若如多筆Email，請以逗號(,)區隔，例如：demo@gmail.com,test@gmail.com</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="table-container-connect"></div>
-        <h3 class="table-container-header">
-            <div class="table-badge table-badge-special-light">7</div>
-            <p class="text-primary-xdark">選擇發布方式</p>
-        </h3>
-        <table class="table table-container shadow-sm mb-5">
-            <tbody>
-                <tr>
-                    <th scope="row" width="15%">接收名單</th>
-                    <td>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" value="" id="namelist_email" checked="">
-                            <label class="form-check-label" for="namelist_email">
-                                Email
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" value="" id="namelist_message" checked="">
-                            <label class="form-check-label" for="namelist_message">
-                                簡訊
-                            </label>
-                        </div>
-                        <button class="btn btn-tertiary-light d-inline-block text-white rounded-pill px-3">設定簡訊</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row" width="15%">發送時間</th>
-                    <td>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="send" id="intime" value="option1" checked="">
-                            <label class="form-check-label" for="intime">即時</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="send" id="reservation" value="option2">
-                            <label class="form-check-label" for="reservation">預約</label>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="d-flex mb-5 justify-content-center flex-wrap table-action">
-            <button class="btn text-white mb-2 mx-1 btn-base-xdark rounded-pill px-3" style="min-width: 130px;">取消</button>
-            <button class="btn text-white mb-2 mx-1 btn-auxiliary rounded-pill px-3" style="min-width: 130px;">預覽新聞稿(ODF檔)</button>
-            <button class="btn text-white mb-2 mx-1 btn-auxiliary rounded-pill px-3" style="min-width: 130px;">預預覽新聞稿</button>
-            <button class="btn text-white mb-2 mx-1 btn-tertiary rounded-pill px-3" style="min-width: 130px;">不發布</button>
-            <button class="btn text-white mb-2 mx-1 btn-primary rounded-pill px-3" style="min-width: 130px;">發布</button>
-            <button class="btn text-white mb-2 mx-1 btn-secondary rounded-pill px-3" style="min-width: 130px;">儲存</button>
-        </div>
-        <div class="text-center text-gray-700 fs-7">
-            建立日期：113年01月01日 <span class="ms-4">最後更新日期及人員：113年01月01日 高郁婷技正</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                農業資材科
+                            </td>
+                            <td>
+                                沈葆雄
+                            </td>
+                            <td>
+                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                            </td>
+                            <td>
+                                農糧署分署範本
+                            </td>
+                            <td>
+                                2024/2/23 06:33:00
+                            </td>
+                            <td>
+                                <p class="text-primary">已發布</p>
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-3 mx-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-3 mx-1">重新發送</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                農業資材科
+                            </td>
+                            <td>
+                                沈葆雄
+                            </td>
+                            <td>
+                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                            </td>
+                            <td>
+                                農糧署分署範本
+                            </td>
+                            <td>
+                                2024/2/23 06:33:00
+                            </td>
+                            <td>
+                                <p class="text-primary">已發布</p>
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-3 mx-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-3 mx-1">重新發送</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>
+                                農業資材科
+                            </td>
+                            <td>
+                                沈葆雄
+                            </td>
+                            <td>
+                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                            </td>
+                            <td>
+                                農糧署分署範本
+                            </td>
+                            <td>
+                                2024/2/23 06:33:00
+                            </td>
+                            <td>
+                                <p class="text-primary">已發布</p>
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-3 mx-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-3 mx-1">重新發送</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>
+                                農業資材科
+                            </td>
+                            <td>
+                                沈葆雄
+                            </td>
+                            <td>
+                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                            </td>
+                            <td>
+                                農糧署分署範本
+                            </td>
+                            <td>
+                                2024/2/23 06:33:00
+                            </td>
+                            <td>
+                                <p class="text-primary">已發布</p>
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-3 mx-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-3 mx-1">重新發送</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>
+                                農業資材科
+                            </td>
+                            <td>
+                                沈葆雄
+                            </td>
+                            <td>
+                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                            </td>
+                            <td>
+                                農糧署分署範本
+                            </td>
+                            <td>
+                                2024/2/23 06:33:00
+                            </td>
+                            <td>
+                                <p class="text-primary">已發布</p>
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-3 mx-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-3 mx-1">重新發送</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-page-info fs-7">
+                    共 120筆，每頁顯示<input type="text" class="form-control form-control-sm mx-2 py-0 text-center" value="10"
+                        style="width:58px;min-height: 20px;">筆
+                </div>
+            </div>
         </div>
     </section>
 </main>
