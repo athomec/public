@@ -18889,6 +18889,10 @@ table.footable-editing.footable-editing-always-show button.footable-add {
 .footable-details td {
   text-align: left !important; }
 
+@media (max-width: 576px) {
+  .footable-details .btn {
+    font-size: 0.9rem; } }
+
 /*-----------------無障礙快速鍵樣式---------------------*/
 .key {
   color: #dee2e6;
