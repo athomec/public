@@ -31,20 +31,17 @@
 		<div class="wrapper">
 			<!--主選單開始-->
 <header>
-    <nav class="navbar navbar-expand-lg fixed-top flex-wrap py-0" data-con="">
-        <div class="container-fluid flex-nowrap px-xxl-5">
+    <nav class="navbar navbar-expand-lg fixed-top flex-wrap py-2 py-xl-3 shadow-sm" data-con="">
+        <div class="container-fluid flex-nowrap align-items-start px-xxl-5">
             <a class="navbar-brand me-0" href="index.html" title="全方位輿情管理整合平台">
-                <img src="./assets/images/logo.svg" class="me-2" alt="全方位輿情管理整合平台" />
-                <h1 class="mb-0">
-                    全方位輿情管理整合平台
-                </h1>
+                <img src="./assets/images/logo.png" class="me-2" alt="全方位輿情管理整合平台" />
             </a>
-            <ul class="navbar-nav flex-row ms-auto">
-                <li class="nav-item me-3 d-none d-md-block">
-                    <p class="text-primary fw-medium">您好，Hsda13578</p>
+            <ul class="navbar-nav flex-row ms-auto ps-sm-3 p-sm-2 shadow-sm-sm mt-1 mt-lg-0">
+                <li class="nav-item me-2 me-lg-3 fw-medium">
+                    您好，Hsda13578
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-sm btn-primary text-white rounded-pill flex-shrink-0 px-md-3 py-0" href="login.html" title="登出">登出</a>
+                    <a class="btn btn-sm btn-primary-xdark text-white rounded-pill flex-shrink-0 px-md-3 py-0" href="login.html" title="登出">登出</a>
                 </li>
             </ul>
         </div>
@@ -52,24 +49,23 @@
 </header>
 <!--主選單結束-->
 				<!--內容區塊開始-->
-<main class="main d-flex bg-base">
+<main class="main d-flex">
     <div class="side-menu js-side-menu">
         <button class="btn btn-dark-primary-color side-menu-toggler js-side-menu-toggler d-lg-none p-1" type="button">
             <img src="./assets/images/ic-chevron-right.svg"> 功能選單
         </button>
-        <h2 class="side-menu-header">功能選單</h2>
         <div class="side-menu-body scrollbar">
             <div class="accordion">
                 <div class="accordion-item side-menu-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button btn side-menu-btn border-0" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapse1">
-                            輿情管理
+                            <img src="./assets/images/ic-discuss-manage.svg" class="me-2"><p>輿情管理</p>
                         </button>
                     </h2>
                     <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent=".side-menu">
-                        <div class="accordion-body bg-primary-dark">
-                            <ul>
+                        <div class="bg-secondary-pale">
+                            <ul class="side-menu-accordion">
                                 <li><a href="index.html" class="side-menu-link">新聞稿編輯區</a></li>
                                 <li><a href="release.html" class="side-menu-link active">發布新聞稿</a></li>
                                 <li><a href="#" class="side-menu-link">新聞稿發布次數統計</a></li>
@@ -83,17 +79,17 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button btn side-menu-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapse2">
-                            新聞稿管理
+                            <img src="./assets/images/ic-news-edit.svg" class="me-2"><p>新聞稿管理</p>
                         </button>
                     </h2>
                     <div id="collapse2" class="accordion-collapse collapse" data-bs-parent=".side-menu">
-                        <div class="accordion-body bg-primary-dark">
-                            <ul>
-                                <li><a href="#" class="side-menu-link active">新聞稿編輯區</a></li>
-                                <li><a href="#" class="side-menu-link">發布新聞稿</a></li>
+                        <div class="bg-secondary-pale">
+                            <ul class="side-menu-accordion">
+                                <li><a href="index.html" class="side-menu-link active">新聞稿編輯區</a></li>
+                                <li><a href="release.html" class="side-menu-link">發布新聞稿</a></li>
                                 <li><a href="#" class="side-menu-link">新聞稿發布次數統計</a></li>
                                 <li><a href="#" class="side-menu-link">新聞稿歷史查詢</a></li>
-                                <li><a href="#" class="side-menu-link">代轉新聞稿查詢</a></li>
+                                <li><a href="search.html" class="side-menu-link">代轉新聞稿查詢</a></li>
                             </ul>
                         </div>
                     </div>
@@ -102,17 +98,18 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button btn side-menu-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapse3">
-                            簡訊管理
+                            <img src="./assets/images/ic-dashborad.svg" class="me-2"><p>儀表板</p>
                         </button>
+                        
                     </h2>
                     <div id="collapse3" class="accordion-collapse collapse" data-bs-parent=".side-menu">
-                        <div class="accordion-body bg-primary-dark">
-                            <ul>
-                                <li><a href="#" class="side-menu-link">新聞稿編輯區</a></li>
-                                <li><a href="#" class="side-menu-link">發布新聞稿</a></li>
+                        <div class="bg-secondary-pale">
+                            <ul class="side-menu-accordion">
+                                <li><a href="index.html" class="side-menu-link active">新聞稿編輯區</a></li>
+                                <li><a href="release.html" class="side-menu-link">發布新聞稿</a></li>
                                 <li><a href="#" class="side-menu-link">新聞稿發布次數統計</a></li>
                                 <li><a href="#" class="side-menu-link">新聞稿歷史查詢</a></li>
-                                <li><a href="#" class="side-menu-link">代轉新聞稿查詢</a></li>
+                                <li><a href="search.html" class="side-menu-link">代轉新聞稿查詢</a></li>
                             </ul>
                         </div>
                     </div>
@@ -121,17 +118,18 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button btn side-menu-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapse4">
-                            儀表板
+                            <img src="./assets/images/ic-message.svg" class="me-2">
+                            <p>簡訊管理</p>
                         </button>
                     </h2>
                     <div id="collapse4" class="accordion-collapse collapse" data-bs-parent=".side-menu">
-                        <div class="accordion-body bg-primary-dark">
-                            <ul>
-                                <li><a href="#" class="side-menu-link active">新聞稿編輯區</a></li>
-                                <li><a href="#" class="side-menu-link">發布新聞稿</a></li>
+                        <div class="bg-secondary-pale">
+                            <ul class="side-menu-accordion">
+                                <li><a href="index.html" class="side-menu-link active">新聞稿編輯區</a></li>
+                                <li><a href="release.html" class="side-menu-link">發布新聞稿</a></li>
                                 <li><a href="#" class="side-menu-link">新聞稿發布次數統計</a></li>
                                 <li><a href="#" class="side-menu-link">新聞稿歷史查詢</a></li>
-                                <li><a href="#" class="side-menu-link">代轉新聞稿查詢</a></li>
+                                <li><a href="search.html" class="side-menu-link">代轉新聞稿查詢</a></li>
                             </ul>
                         </div>
                     </div>
@@ -140,17 +138,18 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button btn side-menu-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapse5">
-                            後台管理
+                            <img src="./assets/images/ic-setting.svg" class="me-2">
+                            <p>後台管理</p>
                         </button>
                     </h2>
                     <div id="collapse5" class="accordion-collapse collapse" data-bs-parent=".side-menu">
-                        <div class="accordion-body bg-primary-dark">
-                            <ul>
-                                <li><a href="#" class="side-menu-link active">新聞稿編輯區</a></li>
-                                <li><a href="#" class="side-menu-link">發布新聞稿</a></li>
+                        <div class="bg-secondary-pale">
+                            <ul class="side-menu-accordion">
+                                <li><a href="index.html" class="side-menu-link active">新聞稿編輯區</a></li>
+                                <li><a href="release.html" class="side-menu-link">發布新聞稿</a></li>
                                 <li><a href="#" class="side-menu-link">新聞稿發布次數統計</a></li>
                                 <li><a href="#" class="side-menu-link">新聞稿歷史查詢</a></li>
-                                <li><a href="#" class="side-menu-link">代轉新聞稿查詢</a></li>
+                                <li><a href="search.html" class="side-menu-link">代轉新聞稿查詢</a></li>
                             </ul>
                         </div>
                     </div>
@@ -161,14 +160,12 @@
     <section class="side-content js-side-content close">
         <div class="side-content-header mb-3">
             <h2 class="side-content-title">發布新聞稿</h2>
-            <ol class="side-content-breadcrumb breadcrumb mb-0 ms-auto opacity-50 mb-2 mb-xl-0">
+            <ol class="side-content-breadcrumb breadcrumb mb-0 ms-auto mb-2 mb-xl-0">
                 <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link" title="首頁">首頁</a></li>
                 <li class="breadcrumb-item"><a href="#" class="breadcrumb-link" title="新聞稿管理">新聞稿管理</a></li>
                 <li class="breadcrumb-item active">發布新聞稿</li>
             </ol>
         </div>
-        <div class="main-container">
-            <h3 class="main-container-title mb-3">新聞稿管理</h3>
             <nav>
                 <div class="nav nav-tabs border-0 scrollbar flex-nowrap overflow-y-hidden" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
@@ -179,7 +176,7 @@
                         role="tab"><img src="./assets/images/ic-forward.svg">代轉新聞稿</button>
                 </div>
             </nav>
-            <div class="tab-content bg-quaternary-light p-3 mb-5" id="nav-tabContent">
+            <div class="tab-content p-3 mb-5" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                     <table class="table table-rwd mb-0">
                         <thead>
@@ -202,7 +199,7 @@
                                     沈葆雄
                                 </td>
                                 <td data-th="標題">
-                                    <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                    <div class="over-text text-primary-xdark">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
                                 </td>
                                 <td data-th="類型">
                                     農糧署分署範本
@@ -214,7 +211,7 @@
                                     2024/2/23 06:33:00
                                 </td>
                                 <td data-th="none">
-                                    <button class="btn btn-sm btn-quaternary-dark text-white rounded-pill px-3">發布管理</button>
+                                    <button class="btn btn-sm btn-secondary-bright text-gray-800 rounded-pill px-3">發布管理</button>
                                 </td>
                             </tr>
                             <tr>
@@ -225,7 +222,7 @@
                                     沈葆雄
                                 </td>
                                 <td data-th="標題">
-                                    <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                    <div class="over-text text-primary-xdark">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
                                 </td>
                                 <td data-th="類型">
                                     農糧署分署範本
@@ -237,7 +234,7 @@
                                     2024/2/23 06:33:00
                                 </td>
                                 <td data-th="none">
-                                    <button class="btn btn-sm btn-special text-white rounded-pill px-3">取消發布</button>
+                                    <button class="btn btn-sm btn-gray-400 text-gray-800 rounded-pill px-3">取消發布</button>
                                 </td>
                             </tr>
                         </tbody>
@@ -248,90 +245,83 @@
                 <div class="tab-pane fade" id="nav-disabled" role="tabpanel">...
                 </div>
             </div>
-            <h3 class="main-container-title mb-3">已發布／未發布之新聞稿</h3>
-            <div class="bg-gray-100 d-flex align-items-end p-3 mb-3 flex-wrap flex-xxl-nowrap mb-3">
-                <div class="container px-0">
-                    <div class="row gy-3">
-                        <div class="col-xl-6 col-xxl-4">
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="bureau" class="form-label">署別</label>
-                                <select class="form-select" id="bureau">
-                                    <option selected="">請選擇</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-xxl-4">
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="room" class="form-label">科室</label>
-                                <select class="form-select" id="room">
-                                    <option selected="">請選擇</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-xxl-4">
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="year" class="form-label">年度</label>
-                                <select class="form-select" id="year">
-                                    <option selected="">請選擇</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-xxl-4">
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="media_number" class="form-label">新聞稿編號</label>
-                                <input type="text" class="form-control" id="media_number" placeholder="請輸入新聞稿編號">
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-xxl-4">
-                            <div class="mb-3 mb-md-0 pe-md-2 pe-lg-3 w-100">
-                                <label for="media_title" class="form-label">標題</label>
-                                <input type="text" class="form-control" id="media_title" placeholder="請輸入標題">
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-xxl-4">
-                            <div class="form-label">新聞稿狀態</div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="status" id="status_all" value="option1" checked="">
-                                    <label class="form-check-label" for="status_all">全部</label>
+            <div class="hr mb-5"></div>
+            <h3 class="main-container-title mb-3">重新發布（新聞稿、採訪通知）</h3>
+            <nav>
+                <div class="nav nav-tabs border-0 scrollbar flex-nowrap overflow-y-hidden" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#release1" type="button"
+                        role="tab">本　署</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#release2" type="button"
+                        role="tab">北區分署</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#release3" type="button"
+                        role="tab">中區分署</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#release4" type="button"
+                            role="tab">南區分署</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#release5" type="button"
+                                role="tab">東區分署</button>
+                </div>
+            </nav>
+            <div class="tab-content p-3 mb-5" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="release1" role="tabpanel">
+                    <div class="gray-100">
+                        <div class="bg-gray-100 d-flex align-items-end flex-wrap flex-md-nowrap py-3 px-0 p-sm-3 mb-3">
+                            <div class="container me-xxl-4 mb-3 mb-lg-0" style="max-width: 100%;">
+                                <div class="row gy-3">
+                                    <div class="col-12">
+                                        <div class="row gy-3">
+                                            <div class="col-6 col-md-4 col-xxl-3">
+                                                <button class="btn tab-action-btn w-100">已發布新聞稿</button>
+                                            </div>
+                                            <div class="col-6 col-md-4 col-xxl-3">
+                                                <button class="btn tab-action-btn w-100">不發布新聞稿</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xxl-4">
+                                            <label for="media_number" class="form-label">新聞稿編號</label>
+                                            <input type="text" class="form-control" id="media_number" placeholder="請輸入新聞稿編號">
+                                    </div>
+                                    <div class="col-md-6 col-xxl-4">
+                                            <label for="media_title" class="form-label">標題</label>
+                                            <input type="text" class="form-control" id="media_title" placeholder="請輸入標題">
+                                    </div>
+                                    <div class="col-md-6 col-xxl-4">
+                                            <label for="year" class="form-label">年度</label>
+                                            <select class="form-select" id="year">
+                                                <option selected="">請選擇</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                    </div>
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="status" id="status_done" value="option2">
-                                    <label class="form-check-label" for="status_done">已發布</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="status" id="status_yet" value="option2">
-                                    <label class="form-check-label" for="status_yet">未發布</label>
-                                </div>
+                            </div>
+                            <div class="flex-shrink-0 px-2 Pad-100">
+                                <button class="btn btn-secondary-bright text-gray-800 rounded-pill ms-auto px-4 mt-2 Pad-100">
+                                    查詢
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex-shrink-0 mb-lg-0 PC-md-100">
-                    <button class="btn btn-primary text-white rounded-pill ms-auto px-4 px-lg-3 mt-2">
-                        查詢
-                    </button>
-                </div>
+                <div class="tab-pane fade" id="release2" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="release3" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="release4" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="release5" role="tabpanel">...</div>
             </div>
+            
             <div class="position-relative">
                 <table class="table table-footable" data-paging="true" data-sorting="true" data-toggle-column="last">
                     <thead>
                         <tr>
-                            <th scope="col" width="70" data-breakpoints="xs sm md">項次</th>
+                            <th scope="col" width="80" data-breakpoints="xs sm md">項次</th>
                             <th scope="col" width="110" data-breakpoints="xs sm md lg">撰稿單位</th>
                             <th scope="col" width="100" data-breakpoints="xs sm md lg xl">撰稿人</th>
                             <th scope="col">標題</th>
                             <th scope="col" width="145" data-breakpoints="xs sm md lg xl">類型</th>
                             <th scope="col" width="220" data-breakpoints="xs sm md">發佈時間</th>
                             <th scope="col" width="100" data-breakpoints="xs sm md">狀態</th>
-                            <th scope="col" width="250" data-breakpoints="xs" data-sorting="none"></th>
+                            <th scope="col" width="260" data-breakpoints="xs" data-sorting="none"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -357,8 +347,8 @@
                             </td>
                             <td>
                                 <div class="d-flex">
-                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
-                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
+                                    <a href="#" class="btn btn-sm btn-auxiliary-light text-gray-800 rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary-bright text-gray-800 rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
                                 </div>
                             </td>
                         </tr>
@@ -384,8 +374,8 @@
                             </td>
                             <td>
                                 <div class="d-flex">
-                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
-                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
+                                    <a href="#" class="btn btn-sm btn-auxiliary-light text-gray-800 rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary-bright text-gray-800 rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
                                 </div>
                             </td>
                         </tr>
@@ -411,8 +401,8 @@
                             </td>
                             <td>
                                 <div class="d-flex">
-                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
-                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
+                                    <a href="#" class="btn btn-sm btn-auxiliary-light text-gray-800 rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary-bright text-gray-800 rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
                                 </div>
                             </td>
                         </tr>
@@ -438,8 +428,8 @@
                             </td>
                             <td>
                                 <div class="d-flex">
-                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
-                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
+                                    <a href="#" class="btn btn-sm btn-auxiliary-light text-gray-800 rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary-bright text-gray-800 rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
                                 </div>
                             </td>
                         </tr>
@@ -465,8 +455,8 @@
                             </td>
                             <td>
                                 <div class="d-flex">
-                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
-                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
+                                    <a href="#" class="btn btn-sm btn-auxiliary-light text-gray-800 rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary-bright text-gray-800 rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
                                 </div>
                             </td>
                         </tr>
@@ -492,8 +482,8 @@
                             </td>
                             <td>
                                 <div class="d-flex">
-                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
-                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
+                                    <a href="#" class="btn btn-sm btn-auxiliary-light text-gray-800 rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary-bright text-gray-800 rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
                                 </div>
                             </td>
                         </tr>
@@ -519,8 +509,8 @@
                             </td>
                             <td>
                                 <div class="d-flex">
-                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
-                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
+                                    <a href="#" class="btn btn-sm btn-auxiliary-light text-gray-800 rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary-bright text-gray-800 rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
                                 </div>
                             </td>
                         </tr>
@@ -546,8 +536,8 @@
                             </td>
                             <td>
                                 <div class="d-flex">
-                                    <a href="#" class="btn btn-sm btn-auxiliary text-white rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
-                                    <a href="#" class="btn btn-sm btn-secondary text-white rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
+                                    <a href="#" class="btn btn-sm btn-auxiliary-light text-gray-800 rounded-pill px-2 px-md-3 ms-0 me-2 mx-md-1">傳送記錄</a>
+                                    <a href="#" class="btn btn-sm btn-secondary-bright text-gray-800 rounded-pill px-2 px-md-3 mx-0 mx-md-1">重新發送</a>
                                 </div>
                             </td>
                         </tr>
@@ -558,7 +548,6 @@
                         style="width:58px;min-height: 20px;">筆
                 </div>
             </div>
-        </div>
     </section>
 </main>
 <script>
@@ -573,15 +562,16 @@
 </script>
 					<footer class="footer">
     <a href="#" class="footer-gotop shadow-sm"><img src="./assets/images/ic-gotop.svg">TOP</a>
-    <div class="container-fluid footer-inner px-4 px-xl-5">
+    <div class="container-fluid footer-inner px-xl-4">
         <p>
-            <span>農糧署全方位輿情管理系統 版權所有©copyright 2022</span>
+            <span class="me-2">農糧署全方位輿情管理系統 版權所有©copyright 2022</span>
             <span>建議農業瀏覽器: Google Chrome 、IE11以上</span>
         </p>
-        <p>
-            <span>維修廠商：巨鷗科技股份有限公司</span>
-            <span>聯絡窗口：(04)22985258 #509</span>
-            <span>江哲瑋／mail：<a href="mailto:mark@geo.com.tw" class="link-white">mark@geo.com.tw</a></span>
+        <img src="./assets/images/logo.svg" alt="農糧署" class="footer-logo ms-3 mb-3 mb-xl-0">
+        <p class="ms-xxl-3">
+            <span class="me-2">維修廠商：巨鷗科技股份有限公司</span>
+            <span class="me-2">聯絡窗口： (04)22985258 #509</span>
+            <span>江哲瑋／mail：<a href="mailto:mark@geo.com.tw" class="link-primary">mark@geo.com.tw</a></span>
         </p>
     </div>
 </footer>
