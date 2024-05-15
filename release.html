@@ -22,7 +22,7 @@
 		<noscript>
 			<div class="container">
 				<div
-					class="d-flex justify-content-center bg-gray-100 rounded p-4 text-primary border border-primary mt-6">
+					class="d-flex justify-content-center bg-base-light rounded p-4 text-primary border border-primary mt-6">
 					很抱歉，網站的某些功能在JavaScript沒有啟用的狀態下無法正常使用。
 				</div>
 			</div>
@@ -79,7 +79,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button btn side-menu-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapse2">
-                            <img src="./assets/images/ic-news-edit.svg" class="me-2"><p>新聞稿管理</p>
+                            <img src="./assets/images/ic-news-edit.svg" class="me-3"><p>新聞稿管理</p>
                         </button>
                     </h2>
                     <div id="collapse2" class="accordion-collapse collapse" data-bs-parent=".side-menu">
@@ -98,7 +98,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button btn side-menu-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapse3">
-                            <img src="./assets/images/ic-dashborad.svg" class="me-2"><p>儀表板</p>
+                            <img src="./assets/images/ic-dashborad.svg" class="me-3"><p>儀表板</p>
                         </button>
                         
                     </h2>
@@ -118,7 +118,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button btn side-menu-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapse4">
-                            <img src="./assets/images/ic-message.svg" class="me-2">
+                            <img src="./assets/images/ic-message.svg" class="me-3">
                             <p>簡訊管理</p>
                         </button>
                     </h2>
@@ -138,7 +138,7 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button btn side-menu-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapse5">
-                            <img src="./assets/images/ic-setting.svg" class="me-2">
+                            <img src="./assets/images/ic-setting.svg" class="me-3">
                             <p>後台管理</p>
                         </button>
                     </h2>
@@ -159,7 +159,7 @@
     </div>
     <section class="side-content js-side-content close">
         <div class="side-content-header mb-3">
-            <h2 class="side-content-title">發布新聞稿</h2>
+            <h2 class="side-content-title"><img src="./assets/images/ic-news-edit.svg" class="me-2">發布新聞稿</h2>
             <ol class="side-content-breadcrumb breadcrumb mb-0 ms-auto mb-2 mb-xl-0">
                 <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link" title="首頁">首頁</a></li>
                 <li class="breadcrumb-item"><a href="#" class="breadcrumb-link" title="新聞稿管理">新聞稿管理</a></li>
@@ -181,7 +181,7 @@
                     <table class="table table-rwd mb-0">
                         <thead>
                             <tr>
-                                <th scope="col" width="150">撰稿單位</th>
+                                <th scope="col" width="200">撰稿單位</th>
                                 <th scope="col" width="90">撰稿人</th>
                                 <th scope="col">標題</th>
                                 <th scope="col" width="150">類型</th>
@@ -199,7 +199,7 @@
                                     沈葆雄
                                 </td>
                                 <td data-th="標題">
-                                    <div class="over-text text-primary-xdark">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                    <div class="over-text text-primary-xxdark fw-semibold">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
                                 </td>
                                 <td data-th="類型">
                                     農糧署分署範本
@@ -222,7 +222,7 @@
                                     沈葆雄
                                 </td>
                                 <td data-th="標題">
-                                    <div class="over-text text-primary-xdark">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                    <div class="over-text text-primary-xxdark fw-semibold">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
                                 </td>
                                 <td data-th="類型">
                                     農糧署分署範本
@@ -264,7 +264,7 @@
             <div class="tab-content p-3 mb-5" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="release1" role="tabpanel">
                     <div class="gray-100">
-                        <div class="bg-gray-100 d-flex align-items-end flex-wrap flex-md-nowrap py-3 px-0 p-sm-3 mb-3">
+                        <div class="bg-base-light d-flex align-items-end flex-wrap flex-md-nowrap py-3 px-0 p-sm-3 mb-3">
                             <div class="container me-xxl-4 mb-3 mb-lg-0" style="max-width: 100%;">
                                 <div class="row gy-3">
                                     <div class="col-12">
@@ -320,7 +320,6 @@
                             <th scope="col">標題</th>
                             <th scope="col" width="145" data-breakpoints="xs sm md lg xl">類型</th>
                             <th scope="col" width="220" data-breakpoints="xs sm md">發佈時間</th>
-                            <th scope="col" width="100" data-breakpoints="xs sm md">狀態</th>
                             <th scope="col" width="260" data-breakpoints="xs" data-sorting="none"></th>
                         </tr>
                     </thead>
@@ -334,16 +333,13 @@
                                 沈葆雄
                             </td>
                             <td>
-                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                <div class="over-text text-primary-xxdark fw-semibold">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
                             </td>
                             <td>
                                 農糧署分署範本
                             </td>
                             <td>
                                 2024/2/23 06:33:00
-                            </td>
-                            <td>
-                                <p class="text-primary">已發布</p>
                             </td>
                             <td>
                                 <div class="d-flex">
@@ -361,16 +357,13 @@
                                 沈葆雄
                             </td>
                             <td>
-                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                <div class="over-text text-primary-xxdark fw-semibold">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
                             </td>
                             <td>
                                 農糧署分署範本
                             </td>
                             <td>
                                 2024/2/23 06:33:00
-                            </td>
-                            <td>
-                                <p class="text-primary">已發布</p>
                             </td>
                             <td>
                                 <div class="d-flex">
@@ -388,16 +381,13 @@
                                 沈葆雄
                             </td>
                             <td>
-                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                <div class="over-text text-primary-xxdark fw-semibold">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
                             </td>
                             <td>
                                 農糧署分署範本
                             </td>
                             <td>
                                 2024/2/23 06:33:00
-                            </td>
-                            <td>
-                                <p class="text-primary">已發布</p>
                             </td>
                             <td>
                                 <div class="d-flex">
@@ -415,16 +405,13 @@
                                 沈葆雄
                             </td>
                             <td>
-                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                <div class="over-text text-primary-xxdark fw-semibold">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
                             </td>
                             <td>
                                 農糧署分署範本
                             </td>
                             <td>
                                 2024/2/23 06:33:00
-                            </td>
-                            <td>
-                                <p class="text-primary">已發布</p>
                             </td>
                             <td>
                                 <div class="d-flex">
@@ -442,16 +429,13 @@
                                 沈葆雄
                             </td>
                             <td>
-                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                <div class="over-text text-primary-xxdark fw-semibold">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
                             </td>
                             <td>
                                 農糧署分署範本
                             </td>
                             <td>
                                 2024/2/23 06:33:00
-                            </td>
-                            <td>
-                                <p class="text-primary">已發布</p>
                             </td>
                             <td>
                                 <div class="d-flex">
@@ -469,16 +453,13 @@
                                 沈葆雄
                             </td>
                             <td>
-                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                <div class="over-text text-primary-xxdark fw-semibold">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
                             </td>
                             <td>
                                 農糧署分署範本
                             </td>
                             <td>
                                 2024/2/23 06:33:00
-                            </td>
-                            <td>
-                                <p class="text-primary">已發布</p>
                             </td>
                             <td>
                                 <div class="d-flex">
@@ -496,16 +477,13 @@
                                 沈葆雄
                             </td>
                             <td>
-                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                <div class="over-text text-primary-xxdark fw-semibold">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
                             </td>
                             <td>
                                 農糧署分署範本
                             </td>
                             <td>
                                 2024/2/23 06:33:00
-                            </td>
-                            <td>
-                                <p class="text-primary">已發布</p>
                             </td>
                             <td>
                                 <div class="d-flex">
@@ -523,16 +501,13 @@
                                 沈葆雄
                             </td>
                             <td>
-                                <div class="over-text text-tertiary">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
+                                <div class="over-text text-primary-xxdark fw-semibold">農糧署農機補助啟動加碼補助農機碼補助農糧署農機補助啟動加碼補助農機碼補助</div>
                             </td>
                             <td>
                                 農糧署分署範本
                             </td>
                             <td>
                                 2024/2/23 06:33:00
-                            </td>
-                            <td>
-                                <p class="text-primary">已發布</p>
                             </td>
                             <td>
                                 <div class="d-flex">
@@ -571,7 +546,7 @@
         <p class="ms-xxl-3">
             <span class="me-2">維修廠商：巨鷗科技股份有限公司</span>
             <span class="me-2">聯絡窗口： (04)22985258 #509</span>
-            <span>江哲瑋／mail：<a href="mailto:mark@geo.com.tw" class="link-primary">mark@geo.com.tw</a></span>
+            <span>江哲瑋／mail：<a href="mailto:mark@geo.com.tw" class="link-gray-800">mark@geo.com.tw</a></span>
         </p>
     </div>
 </footer>
