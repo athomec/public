@@ -19496,6 +19496,9 @@ table.footable-editing.footable-editing-always-show button.footable-add {
   padding: 10px 0 0 10px;
   margin-left: -10px;
   margin-bottom: -1px; }
+  @media (max-width: 576px) {
+    .nav-tabs {
+      margin-left: 0; } }
   .nav-tabs .nav-item {
     margin-bottom: 0; }
   .nav-tabs .nav-link {
@@ -21035,10 +21038,13 @@ input[type="file"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-size: 100%;
+  background-size: cover;
   width: 100%;
   -webkit-box-shadow: 0 3px 5px #adb5bd;
           box-shadow: 0 3px 5px #adb5bd; }
+  @media (max-width: 576px) {
+    .navbar {
+      background-size: 1200px; } }
   .navbar-brand {
     width: 350px; }
     @media (max-width: 1550px) {
@@ -21064,6 +21070,9 @@ input[type="file"] {
     @media (max-width: 1200px) {
       .navbar-nav .nav-item {
         font-size: 0.954rem; } }
+    @media (max-width: 576px) {
+      .navbar-nav .nav-item {
+        font-size: 0.848rem; } }
 
 /*--------------------側邊選單開始------------------*/
 .side-menu {
@@ -22689,6 +22698,9 @@ tr.editing > * {
   -webkit-box-shadow: 0 0 3px #adb5bd;
           box-shadow: 0 0 3px #adb5bd;
   border-radius: 0 10px 10px 10px; }
+  @media (max-width: 375px) {
+    .tab-content {
+      border-radius: 10px; } }
 
 .inner-form-box img {
   -webkit-filter: brightness(500%);
@@ -23460,6 +23472,9 @@ tr.editing > * {
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
+  @media (max-width: 1200px) {
+    .tab-action-btn {
+      font-size: 1.06rem !important; } }
   .tab-action-btn:focus {
     -webkit-box-shadow: 0 3px 3px #ced4da !important;
             box-shadow: 0 3px 3px #ced4da !important; }
