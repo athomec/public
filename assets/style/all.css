@@ -21046,19 +21046,19 @@ input[type="file"] {
     .navbar {
       background-size: 1200px; } }
   .navbar-brand {
-    width: 350px; }
+    width: 266px; }
     @media (max-width: 1550px) {
       .navbar-brand {
-        width: 280px; } }
+        width: 214px; } }
     @media (max-width: 1400px) {
       .navbar-brand {
-        width: 250px; } }
+        width: 191px; } }
     @media (max-width: 1200px) {
       .navbar-brand {
-        width: 200px; } }
+        width: 150px; } }
     @media (max-width: 523px) {
       .navbar-brand {
-        width: 150px; } }
+        width: 112px; } }
   .navbar-nav {
     background: #fff;
     border-radius: 80px;
@@ -21067,12 +21067,19 @@ input[type="file"] {
       .navbar-nav {
         border: none;
         background: none; } }
-    @media (max-width: 1200px) {
-      .navbar-nav .nav-item {
-        font-size: 0.954rem; } }
-    @media (max-width: 576px) {
-      .navbar-nav .nav-item {
-        font-size: 0.848rem; } }
+    .navbar-nav .nav-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media (max-width: 1200px) {
+        .navbar-nav .nav-item {
+          font-size: 0.954rem; } }
+      @media (max-width: 576px) {
+        .navbar-nav .nav-item {
+          font-size: 0.848rem; } }
 
 /*--------------------側邊選單開始------------------*/
 .side-menu {
@@ -21950,6 +21957,7 @@ input[type="file"] {
   font-size: 1.59rem;
   position: relative;
   padding: 8px 16px 8px 80px;
+  border-radius: 15px 15px 0 15px;
   margin-bottom: 0;
   position: relative;
   background: #BEE181; }
@@ -21981,6 +21989,7 @@ input[type="file"] {
             box-shadow: 0 1px 4px #adb5bd;
     margin-right: 36px;
     z-index: 20;
+    border-radius: 10px 0 0 10px;
     left: 0;
     top: 0; }
     @media (max-width: 767px) {
