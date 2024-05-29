@@ -21018,7 +21018,7 @@ input[type="file"] {
   border: 1px solid #fff !important; }
 
 .main {
-  margin-top: 140px; }
+  margin-top: 118px; }
   @media (max-width: 1550px) {
     .main {
       margin-top: 116px; } }
@@ -21046,7 +21046,7 @@ input[type="file"] {
     .navbar {
       background-size: 1200px; } }
   .navbar-brand {
-    width: 266px; }
+    width: 221px; }
     @media (max-width: 1550px) {
       .navbar-brand {
         width: 214px; } }
@@ -21084,7 +21084,7 @@ input[type="file"] {
 /*--------------------側邊選單開始------------------*/
 .side-menu {
   width: 340px;
-  height: calc(100% - 134px);
+  height: calc(100% - 118px);
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-transition: all 0.2s ease;
@@ -21548,10 +21548,15 @@ input[type="file"] {
       .login-form input[data-type="password"] {
         background: url("../images/ic-password.svg") no-repeat 16px center #fff; }
     .login-form-logo {
-      width: 360px; }
+      width: 40%;
+      max-width: 196px;
+      margin-right: auto;
+      margin-left: 48px; }
+      @media (max-width: 1550px) {
+        .login-form-logo {
+          margin-left: 0; } }
       @media (max-width: 991px) {
         .login-form-logo {
-          width: 280px;
           margin-bottom: 32px; } }
       @media (max-width: 767px) {
         .login-form-logo {
@@ -21561,7 +21566,10 @@ input[type="file"] {
         .login-form-logo {
           width: 200px; } }
     .login-form-title {
-      display: block; }
+      display: block;
+      max-width: 417px;
+      width: 80%;
+      margin-bottom: 56px; }
       @media (max-width: 1550px) {
         .login-form-title {
           font-size: 2.65rem; } }
