@@ -21046,19 +21046,19 @@ input[type="file"] {
     .navbar {
       background-size: 1200px; } }
   .navbar-brand {
-    width: 221px; }
+    width: 210px; }
     @media (max-width: 1550px) {
       .navbar-brand {
-        width: 214px; } }
+        width: 204px; } }
     @media (max-width: 1400px) {
       .navbar-brand {
-        width: 191px; } }
+        width: 182px; } }
     @media (max-width: 1200px) {
       .navbar-brand {
-        width: 150px; } }
+        width: 141px; } }
     @media (max-width: 523px) {
       .navbar-brand {
-        width: 112px; } }
+        width: 105px; } }
   .navbar-nav {
     background: #fff;
     border-radius: 80px;
